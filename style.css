@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: #1a1a1a;
+    position: relative;
+}
+
+#settingsBtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+.hidden { display: none; }
+
+#settingsPanel {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00f;
+    z-index: 1000;
+}
+
+#settingsPanel button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+}
+
+the game-category {
+    margin: 20px;
+}
+
+the game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+the game-tile {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+the game-tile img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+the game-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00f;
+}
+
+/* PS3 style */
+.ps3 .game-tile {
+    border-radius: 5px;
+    background: #2a2a2a;
+}
+
+.ps3 .game-tile:hover {
+    box-shadow: 0 0 15px #ff0000;
+    transform: scale(1.05);
+}
+
+/* PS4 style */
+.ps4 .game-tile {
+    border-radius: 8px;
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+}
+
+.ps4 .game-tile:hover {
+    box-shadow: 0 0 25px #0077ff;
+    transform: scale(1.1);
+}
+
+/* PS5 style */
+.ps5 .game-tile {
+    border-radius: 15px;
+    background: linear-gradient(145deg, #0f0f0f, #222);
+}
+
+.ps5 .game-tile:hover {
+    box-shadow: 0 0 30px #00ffff;
+    transform: scale(1.15);
+}
